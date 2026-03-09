@@ -48,7 +48,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold">Hello!</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a software engineer with a computer engineering background, and a passion for building
+                I'm a software developer with a computer engineering background, and a passion for building
                 applied, data-driven solutions across various domains. Currently,
                 I'm a second-year Posse Scholar completing my undergrad at the University
                 of Wisconsin-Madison.
