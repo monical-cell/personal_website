@@ -35,7 +35,7 @@ export default function AboutPage() {
             <div className="relative w-64 h-64 rounded-full overflow-hidden">
               <Image
                 src="/headshot.jpeg"
-                alt="Soham Mukherjee"
+                alt="Monica Lai"
                 fill
                 className="object-cover"
                 priority
@@ -79,7 +79,7 @@ export default function AboutPage() {
                 className="relative p-6 rounded-lg border bg-card group"
               >
                 {/* Energy aura on hover */}
-                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-violet-500/20 to-indigo-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/10 to-yellow-300/10 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 <h3 className="font-semibold mb-3">{category.title}</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">

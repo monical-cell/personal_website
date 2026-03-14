@@ -125,9 +125,9 @@ export function CursorEffect() {
         cursor.y,
         30
       );
-      gradient.addColorStop(0, "rgba(139, 92, 246, 0.4)"); // purple glow
-      gradient.addColorStop(0.5, "rgba(139, 92, 246, 0.2)");
-      gradient.addColorStop(1, "rgba(139, 92, 246, 0)");
+      gradient.addColorStop(0, "rgba(255, 215, 0, 0.4)"); // purple glow
+      gradient.addColorStop(0.5, "rgba(255, 215, 0, 0.2)");
+      gradient.addColorStop(1, "rgba(255, 215, 0, 0)");
 
       ctx.fillStyle = gradient;
       ctx.fillRect(cursor.x - 30, cursor.y - 30, 60, 60);
@@ -135,7 +135,7 @@ export function CursorEffect() {
       // Draw cursor center dot
       ctx.beginPath();
       ctx.arc(cursor.x, cursor.y, 3, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(139, 92, 246, 0.8)";
+      ctx.fillStyle = "rgba(255, 215, 0, 0.8)";
       ctx.fill();
 
       // Update and draw particles
@@ -154,7 +154,7 @@ export function CursorEffect() {
         const opacity = p.life / p.maxLife;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(139, 92, 246, ${opacity * 0.6})`;
+        ctx.fillStyle = `rgba(255, 215, 0, ${opacity * 0.6})`;
         ctx.fill();
       }
 
@@ -172,7 +172,7 @@ export function CursorEffect() {
 
         ctx.beginPath();
         ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
-        ctx.strokeStyle = `rgba(139, 92, 246, ${r.opacity})`;
+        ctx.strokeStyle = `rgba(255, 215, 0, ${r.opacity})`;
         ctx.lineWidth = 2;
         ctx.stroke();
       }

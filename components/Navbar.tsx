@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -36,7 +35,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo/Brand */}
           <Link href="/" className="text-xl font-bold hover:text-primary transition-colors">
-            Soham Mukherjee
+            Monica Lai
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,12 +53,10 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-2">
-            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"

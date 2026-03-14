@@ -67,21 +67,21 @@ export default function Home() {
               scale: isHovering ? 1.05 : 1,
             }}
             transition={{ duration: 0.3 }}
-            className="absolute -inset-4 bg-gradient-to-r from-indigo-600 via-indigo-600 to-indigo-600 rounded-3xl blur-2xl"
+            className="absolute -inset-4 bg-gradient-to-r from-white/30 via-white/30 to-white/30 rounded-3xl blur-2xl"
             aria-hidden="true"
           />
           
           {/* Main content card */}
-          <div className="relative bg-background/80 backdrop-blur-xl border border-indigo-500/20 rounded-2xl p-6 md:p-12 shadow-2xl">
+          <div className="relative bg-background/80 backdrop-blur-xl border border-white/50/20 rounded-2xl p-6 md:p-12 shadow-2xl">
             {/* Mission Control Badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.5, type: "spring" }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50/10 border border-white/50/30 mb-8"
             >
-              <Sparkles className="w-4 h-4 text-indigo-400" />
-              <span className="text-sm font-medium text-indigo-300">Systems Online</span>
+              <Sparkles className="w-4 h-4 text-yellow-300" />
+              <span className="text-sm font-medium text-yellow-200">Systems Online</span>
             </motion.div>
 
             {/* Staggered Headline Animation */}
@@ -104,13 +104,13 @@ export default function Home() {
                   </motion.span>
                 ))}
                 <span className="relative inline-block">
-                  {"Soham".split("").map((char, i) => (
+                  {"Monica".split("").map((char, i) => (
                     <motion.span
                       key={`name-${i}`}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.9 + i * 0.05 }}
-                      className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-indigo-400 to-indigo-400"
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-300"
                     >
                       {char === " " ? "\u00A0" : char}
                     </motion.span>
@@ -153,9 +153,9 @@ export default function Home() {
                   className="relative group"
                 >
                   {/* Button glow effect */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-indigo-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300" />
+                  <div className="absolute -inset-1 bg-gradient-to-r from-white/30 to-white/30 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300" />
                   
-                  <Button size="lg" className="relative w-full bg-gradient-to-r from-indigo-600 to-indigo-600 hover:from-indigo-500 hover:to-indigo-500 border-0">
+                  <Button size="lg" className="relative w-full bg-gradient-to-r from-white/30 to-white/30 hover:from-white/50 hover:to-white/50 border-0">
                     <Sparkles className="mr-2 h-4 w-4" />
                     Explore Projects
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -168,7 +168,7 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button size="lg" variant="outline" className="w-full border-indigo-500/50 hover:bg-indigo-500/10">
+                  <Button size="lg" variant="outline" className="w-full border-white/50/50 hover:bg-white/50/10">
                     Contact Me
                   </Button>
                 </motion.div>
@@ -197,9 +197,9 @@ export default function Home() {
                   transition={{ delay: 2.2 + index * 0.1, type: "spring" }}
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-muted-foreground hover:text-indigo-400 transition-colors relative group"
+                  className="text-muted-foreground hover:text-yellow-300 transition-colors relative group"
                 >
-                  <div className="absolute inset-0 bg-indigo-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-white/50/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
                   <social.icon className="h-6 w-6 relative" />
                   <span className="sr-only">{social.label}</span>
                 </motion.a>
@@ -220,7 +220,7 @@ export default function Home() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-10 left-5 md:top-20 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"
+        className="absolute top-10 left-5 md:top-20 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-white/50/20 rounded-full blur-3xl pointer-events-none"
         aria-hidden="true"
       />
       
@@ -235,7 +235,7 @@ export default function Home() {
           ease: "easeInOut",
           delay: 1,
         }}
-        className="absolute bottom-10 right-5 md:bottom-20 md:right-10 w-32 h-32 md:w-40 md:h-40 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"
+        className="absolute bottom-10 right-5 md:bottom-20 md:right-10 w-32 h-32 md:w-40 md:h-40 bg-white/50/20 rounded-full blur-3xl pointer-events-none"
         aria-hidden="true"
       />
     </div>

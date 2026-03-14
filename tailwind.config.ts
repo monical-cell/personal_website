@@ -1,9 +1,6 @@
 import type { Config } from "tailwindcss"
 
 const config = {
-  // Enable dark mode using the 'class' strategy (controlled by next-themes)
-  darkMode: ["class"],
-  
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -22,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        cursive: ['"Dancing Script"', '"Pacifico"', '"Great Vibes"', 'cursive'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

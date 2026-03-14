@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Brand/Description */}
           <div className="space-y-3">
-            <h3 className="text-lg font-semibold">Soham Mukherjee</h3>
+            <h3 className="text-lg font-semibold">Monica Lai</h3>
             <p className="text-sm text-muted-foreground">
               Software developer with a computer engineering background, interested in building applied, data-driven solutions across various domains.
             </p>
@@ -99,7 +99,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p className="flex items-center justify-center gap-1">
-            © {currentYear} Soham Mukherjee. Made using Next.js
+            © {currentYear} Monica Lai. Made using Next.js
           </p>
         </div>
       </div>

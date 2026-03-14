@@ -117,7 +117,7 @@ export default function ContactPage() {
                 whileTap={{ scale: 0.98 }}
               >
                 {/* Magical ring glow */}
-                <div className="absolute inset-0 bg-gradient-to-r from-violet-500/30 to-indigo-500/30 rounded-md blur-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-yellow-300/20 rounded-md blur-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300" />
                 
                 <Button type="submit" className="w-full relative">
                   Send Message

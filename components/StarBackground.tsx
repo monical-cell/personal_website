@@ -39,18 +39,18 @@ export function StarBackground() {
     }
 
     const stars: Star[] = [];
-    const starCount = 150;
+    const starCount = 80;
 
-    // Generate stars with varied properties
+    // Generate stars with varied properties - subtler than original
     for (let i = 0; i < starCount; i++) {
       const layer = Math.floor(Math.random() * 3); // 0, 1, or 2
       stars.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        radius: layer === 0 ? 0.5 : layer === 1 ? 1 : 1.5,
-        vx: (Math.random() - 0.5) * 0.1 * (layer + 1),
-        vy: (Math.random() - 0.5) * 0.1 * (layer + 1),
-        opacity: layer === 0 ? 0.3 : layer === 1 ? 0.6 : 0.9,
+        radius: layer === 0 ? 0.3 : layer === 1 ? 0.6 : 1,
+        vx: (Math.random() - 0.5) * 0.05 * (layer + 1),
+        vy: (Math.random() - 0.5) * 0.05 * (layer + 1),
+        opacity: layer === 0 ? 0.15 : layer === 1 ? 0.3 : 0.5,
         layer,
       });
     }
@@ -79,13 +79,7 @@ export function StarBackground() {
         ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
         ctx.fill();
 
-        // Add subtle glow for larger stars
-        if (star.layer === 2) {
-          ctx.beginPath();
-          ctx.arc(star.x, star.y, star.radius * 2, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity * 0.2})`;
-          ctx.fill();
-        }
+        // No glow - keep stars subtle
       });
 
       animationFrameId = requestAnimationFrame(animate);
