@@ -25,7 +25,7 @@ export default function ProjectsPage() {
         <div className="text-center space-y-2">
           <h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Check out some of my recent work and tools I've built.
+            Check out some of my hobbies and interests!
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function ProjectsPage() {
         {projects.length === 0 && (
           <div className="text-center py-12">
             <p className="text-muted-foreground">
-              Projects coming soon! Check back later.
+              Check back later for updates!
             </p>
           </div>
         )}

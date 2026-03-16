@@ -30,7 +30,7 @@ export default function ContactPage() {
       `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
     );
 
-    window.location.href = `mailto:smukherjee39@wisc.edu?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:monical@uchicago.edu?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (
@@ -142,10 +142,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium">Email</p>
                     <a
-                      href="mailto:smukherjee39@wisc.edu"
+                      href="mailto:monical@uchicago.edu"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      smukherjee39@wisc.edu
+                      monical@uchicago.edu
                     </a>
                   </div>
                 </div>
@@ -156,10 +156,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium">Phone</p>
                     <a
-                      href="tel:+17323310738"
+                      href="tel:+19179626345"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +1 (732) 331-0738
+                      +1 (917) 962-6345
                     </a>
                   </div>
                 </div>

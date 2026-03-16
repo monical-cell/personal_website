@@ -124,7 +124,7 @@ export default function Home() {
                 transition={{ delay: 1.3, duration: 0.5 }}
                 className="text-lg md:text-xl lg:text-2xl text-muted-foreground"
               >
-                CE + CS @ UW-Madison
+                Economics and Public Policy @ UChicago
               </motion.p>
             </div>
 
@@ -183,9 +183,9 @@ export default function Home() {
               className="flex gap-4 md:gap-6 justify-center pt-2"
             >
               {[
-                { href: "https://github.com/SpiderWolf6", icon: Github, label: "GitHub" },
-                { href: "https://linkedin.com/in/soham-mukherjee-sm", icon: Linkedin, label: "LinkedIn" },
-                { href: "mailto:smukherjee39@wisc.edu", icon: Mail, label: "Email" },
+                { href: "https://github.com/monical-cell", icon: Github, label: "GitHub" },
+                { href: "https://www.linkedin.com/in/monicalai06/", icon: Linkedin, label: "LinkedIn" },
+                { href: "mailto:monical@uchicago.edu", icon: Mail, label: "Email" },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}

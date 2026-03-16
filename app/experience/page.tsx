@@ -252,9 +252,9 @@ interface LearningTrack {
 // Sample work experience data - Update with your own experience
 const workExperience: ExperienceItem[] = [
   {
-    title: "Per Diem Research Associate",
-    organization: "The Benjamin Greenbaum Lab at Memorial Sloan Kettering Cancer Center",
-    date: "June 2022 - Present",
+    title: "Project Manager",
+    organization: "Prism Consulting Group",
+    date: "April 2025 - Present",
     description:
       "Currently building an agentic-RAG AI research assistant to improve productivity of research scientists.",
     highlights: [
@@ -264,9 +264,9 @@ const workExperience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Career Coaching Scholar",
-    organization: "Apple",
-    date: "Jan 2026 - Present",
+    title: "Policy Researcher",
+    organization: "Paul Douglas Institute",
+    date: "October 2024 - Present",
     description:
       "",
     highlights: [
@@ -274,8 +274,8 @@ const workExperience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Head of Software Engineering",
-    organization: "WiscoHumanoids",
+    title: "Business Development Intern",
+    organization: "Polsky Center for Innovation",
     date: "Jan 2026 - Present",
     description:
       "",
@@ -284,9 +284,9 @@ const workExperience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Student Leadership Fellow",
-    organization: "Accenture",
-    date: "Feb 2026 - Present",
+    title: "Research and Data Intern",
+    organization: "Center for Tax and Budget Accountability",
+    date: "December 2025 - Present",
     description:
       "",
     highlights: [
@@ -294,8 +294,8 @@ const workExperience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Vice President of Engineering",
-    organization: "Software Development Club",
+    title: "Head of Marketing and Engagement",
+    organization: "UChicago Chinese Undergraduate Student Association",
     date: "Sep 2025 - Present",
     description:
       "",
@@ -305,9 +305,9 @@ const workExperience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Student Manager and Analyst",
-    organization: "Wisconsin Badgers Division I Men's Soccer",
-    date: "Jan 2025 - Present",
+    title: "Budget Analyst Intern",
+    organization: "Citizens Budget Commission",
+    date: "May 2025 - August 2025",
     description:
       "",
     highlights: [
@@ -321,15 +321,14 @@ const workExperience: ExperienceItem[] = [
 // Sample education data - Update with your own education
 const education: ExperienceItem[] = [
   {
-    title: "B.S. in Computer Engineering and Computer Science",
-    organization: "University of Wisconsin-Madison",
+    title: "B.A. in Economics and Public Policy",
+    organization: "University of Chicago",
     date: "2024 - 2028",
     description:
       "In progress. Focused on applied data science and AI/ML.",
     highlights: [
-      "GPA: 3.9/4.0",
-      "Posse Scholar",
-      "Relevant coursework: Matrix Methods in Machine Learning, Big Data Systems, Operating Systems", 
+      "GPA: 3.7/4.0",
+      "First Phoenix Scholar", 
     ],
   },
   {
@@ -339,8 +338,8 @@ const education: ExperienceItem[] = [
     description:
       "Graduated with distinction. Active in student clubs and leadership.",
     highlights: [
-      "GPA: 95/100",
-      "SAT: 1560",
+      "GPA: 96/100",
+      "SAT: 1564",
       "Founder and President of Sports Management Club",
       "Stuyvesant Spectator (Sports Writer)",
       "Stuyvesant Student Union (External Affairs)",
